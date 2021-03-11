@@ -12,12 +12,23 @@ body {
 .rotate {
   perspective: 2000px;
 }
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
 .cube {
   width: 50vmin;
   height: 50vmin;
   position: relative;
-  transform: rotateY(30deg);
   transform-style: preserve-3d;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .face {
   width: 100%;

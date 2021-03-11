@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cube {
+  width: 50vmin;
+  height: 50vmin;
+  position: relative;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.front {
+  border: 1px solid red;
+}
+.left {
+  border: 1px solid green;
+}
+.back {
+  border: 1px solid blue;
+}
+.right {
+  border: 1px solid darkgoldenrod;
+}
+.top {
+  border: 1px solid magenta;
+}
+.bottom {
+  border: 1px solid orange;
+}

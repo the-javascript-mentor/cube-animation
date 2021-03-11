@@ -13,6 +13,8 @@ body {
   width: 50vmin;
   height: 50vmin;
   position: relative;
+  transform: rotateY(30deg);
+  transform-style: preserve-3d;
 }
 .face {
   width: 100%;
@@ -21,19 +23,25 @@ body {
 }
 .front {
   border: 1px solid red;
+  transform: translateZ(25vmin);
 }
 .left {
   border: 1px solid green;
+  transform: translateX(25vmin) rotateY(90deg);
 }
 .back {
   border: 1px solid blue;
+  transform: translateZ(-25vmin);
 }
 .right {
   border: 1px solid darkgoldenrod;
+  transform: translateX(-25vmin) rotateY(90deg);
 }
 .top {
   border: 1px solid magenta;
+  transform: translateY(-25vmin) rotateX(90deg);
 }
 .bottom {
   border: 1px solid orange;
+  transform: translateY(25vmin) rotateX(90deg);
 }

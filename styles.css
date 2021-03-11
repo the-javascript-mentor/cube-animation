@@ -9,6 +9,9 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+.rotate {
+  perspective: 2000px;
+}
 .cube {
   width: 50vmin;
   height: 50vmin;
